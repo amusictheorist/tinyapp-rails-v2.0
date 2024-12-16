@@ -1,0 +1,50 @@
+# Ignore the default Rails log files.
+log/*
+tmp/*
+!/tmp/.keep
+
+# Ignore all database files.
+db/*.sqlite3
+db/*.sqlite3-journal
+
+# Ignore all compiled files.
+*.gem
+*.rbc
+capybara-*.html
+*.rvmrc
+
+# Ignore the default Rails generated files.
+.idea/
+.DS_Store
+*.swp
+*~
+
+# Ignore all test and coverage files.
+test/
+spec/
+
+# Ignore environment-specific files.
+.env
+.env.development
+.env.test
+.env.production
+
+# Ignore the secret key base file.
+config/secrets.yml
+
+# Ignore the default Rails generated tmp file for the assets pipeline.
+public/assets
+public/packs
+public/packs-test
+
+# Ignore generated files from bundler and gem dependencies.
+vendor/bundle
+vendor/cache
+.yarn-error.log
+
+# Ignore the credentials file if you're using Rails 5.2+ with encrypted credentials.
+config/credentials.yml.enc
+config/master.key
+
+# Ignore log files and temporary files.
+*.log
