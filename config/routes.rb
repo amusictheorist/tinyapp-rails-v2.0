@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   resources :urls, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   resources :users, only: [:new, :create, :show]
 
-  get '/login', to: 'sessions#new'
-  post '/login', tp: 'Sessions#create'
-  delete, '/logout', to: 'Sessions#destroy'
+  get '/login', to: 'sessions#new', as: 'login'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
 end
